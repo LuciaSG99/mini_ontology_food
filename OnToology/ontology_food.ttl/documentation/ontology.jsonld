@@ -1,0 +1,266 @@
+[ {
+  "@id" : "http://example.org/food",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
+  "http://purl.org/dc/terms/abstract" : [ {
+    "@language" : "en",
+    "@value" : "A tiny ontology about foods, ingredients, and diets, created for teaching and demonstration purposes."
+  } ],
+  "http://purl.org/dc/terms/creator" : [ {
+    "@id" : "http://example.org/people/LuciaSanchez"
+  } ],
+  "http://purl.org/dc/terms/description" : [ {
+    "@language" : "en",
+    "@value" : "This ontology provides a minimal conceptualization of foods, ingredients, and diets."
+  } ],
+  "http://purl.org/dc/terms/issued" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#date",
+    "@value" : "2025-12-16"
+  } ],
+  "http://purl.org/dc/terms/license" : [ {
+    "@id" : "https://www.apache.org/licenses/LICENSE-2.0"
+  } ],
+  "http://purl.org/dc/terms/modified" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#date",
+    "@value" : "2025-12-16"
+  } ],
+  "http://purl.org/dc/terms/title" : [ {
+    "@language" : "en",
+    "@value" : "Mini Food Ontology"
+  } ],
+  "http://purl.org/vocab/vann/preferredNamespacePrefix" : [ {
+    "@value" : "food"
+  } ],
+  "http://purl.org/vocab/vann/preferredNamespaceUri" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#anyURI",
+    "@value" : "http://example.org/food#"
+  } ],
+  "http://schema.org/codeRepository" : [ {
+    "@id" : "https://github.com/example/mini-food-ontology"
+  } ],
+  "http://www.w3.org/2002/07/owl#versionIRI" : [ {
+    "@id" : "http://example.org/food/1.0.0"
+  } ],
+  "http://www.w3.org/2002/07/owl#versionInfo" : [ {
+    "@value" : "1.0.0"
+  } ],
+  "http://xmlns.com/foaf/0.1/homepage" : [ {
+    "@id" : "http://example.org/food/docs"
+  } ]
+}, {
+  "@id" : "http://example.org/food#Diet",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A set of dietary rules or eating patterns."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Diet"
+  } ]
+}, {
+  "@id" : "http://example.org/food#Food",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Any edible item intended for human consumption."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Food"
+  } ]
+}, {
+  "@id" : "http://example.org/food#Ingredient",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A component used to prepare a food."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Ingredient"
+  } ]
+}, {
+  "@id" : "http://example.org/food#OliveOil",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://example.org/food#Ingredient"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Olive oil"
+  } ]
+}, {
+  "@id" : "http://example.org/food#Pasta",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://example.org/food#Ingredient"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Pasta"
+  } ]
+}, {
+  "@id" : "http://example.org/food#PastaSalad",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://example.org/food#caloriesPer100g" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "150"
+  } ],
+  "http://example.org/food#hasIngredient" : [ {
+    "@id" : "http://example.org/food#OliveOil"
+  }, {
+    "@id" : "http://example.org/food#Pasta"
+  }, {
+    "@id" : "http://example.org/food#Tomato"
+  } ],
+  "http://example.org/food#suitableForDiet" : [ {
+    "@id" : "http://example.org/food#VeganDiet"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://example.org/food#Food"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A simple pasta salad made with tomato and olive oil."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Pasta salad"
+  } ]
+}, {
+  "@id" : "http://example.org/food#Tomato",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://example.org/food#Ingredient"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Tomato"
+  } ]
+}, {
+  "@id" : "http://example.org/food#VeganDiet",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://example.org/food#Diet"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Vegan diet"
+  } ]
+}, {
+  "@id" : "http://example.org/food#VeganFood",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Food that is suitable for a vegan diet."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Vegan food"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://example.org/food#Food"
+  } ]
+}, {
+  "@id" : "http://example.org/food#caloriesPer100g",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Energy value per 100 grams of food."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://example.org/food#Food"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "calories per 100g"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#integer"
+  } ]
+}, {
+  "@id" : "http://example.org/food#hasIngredient",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Relates a food to one of its ingredients."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://example.org/food#Food"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "has ingredient"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://example.org/food#Ingredient"
+  } ]
+}, {
+  "@id" : "http://example.org/food#suitableForDiet",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Indicates that a food is appropriate for a given diet."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://example.org/food#Food"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "suitable for diet"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://example.org/food#Diet"
+  } ]
+}, {
+  "@id" : "http://example.org/people/LuciaSanchez",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://xmlns.com/foaf/0.1/Person"
+  } ],
+  "http://xmlns.com/foaf/0.1/name" : [ {
+    "@value" : "Lucía Sánchez"
+  } ]
+}, {
+  "@id" : "http://purl.org/dc/terms/abstract",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/creator",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/description",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/issued",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/license",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/modified",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/title",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/vocab/vann/preferredNamespacePrefix",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/vocab/vann/preferredNamespaceUri",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://schema.org/codeRepository",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.w3.org/2001/XMLSchema#date",
+  "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ]
+}, {
+  "@id" : "http://xmlns.com/foaf/0.1/Person",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://xmlns.com/foaf/0.1/homepage",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://xmlns.com/foaf/0.1/name",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+} ]
