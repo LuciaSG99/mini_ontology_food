@@ -1,0 +1,119 @@
+@prefix : <http://example.org/food#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix schema: <http://schema.org/> .
+@prefix cc: <http://creativecommons.org/ns#> .
+
+#################################################################
+# Ontology metadata
+#################################################################
+
+<http://example.org/food> a owl:Ontology ;
+  dct:title "Mini Food Ontology"@en ;
+  dct:abstract "A tiny ontology about foods, ingredients, and diets, created for teaching and demonstration purposes."@en ;
+  dct:description "This ontology provides a minimal conceptualization of foods, ingredients, and diets."@en ;
+
+  # Namespace information
+  vann:preferredNamespaceUri "http://example.org/food#"^^xsd:anyURI ;
+  vann:preferredNamespacePrefix "food" ;
+
+  # Attribution
+  dct:creator <http://example.org/people/LuciaSanchez> ;
+
+  # License
+  dct:license <https://www.apache.org/licenses/LICENSE-2.0> ;
+  
+
+  # Versioning
+  owl:versionInfo "1.0.0" ;
+  owl:versionIRI <http://example.org/food/1.0.0> ;
+
+  # Dates
+  dct:issued "2025-12-16"^^xsd:date ;
+  dct:modified "2025-12-16"^^xsd:date ;
+
+  # Project links
+  foaf:homepage <http://example.org/food/docs> ;
+  schema:codeRepository <https://github.com/example/mini-food-ontology> .
+
+#################################################################
+# Agents
+#################################################################
+
+<http://example.org/people/LuciaSanchez> a foaf:Person ;
+  foaf:name "Lucía Sánchez" .
+
+#################################################################
+# Classes
+#################################################################
+
+:Food a owl:Class ;
+  rdfs:label "Food"@en ;
+  rdfs:comment "Any edible item intended for human consumption."@en .
+
+:Ingredient a owl:Class ;
+  rdfs:label "Ingredient"@en ;
+  rdfs:comment "A component used to prepare a food."@en .
+
+:Diet a owl:Class ;
+  rdfs:label "Diet"@en ;
+  rdfs:comment "A set of dietary rules or eating patterns."@en .
+
+:VeganFood a owl:Class ;
+  rdfs:label "Vegan food"@en ;
+  rdfs:comment "Food that is suitable for a vegan diet."@en ;
+  rdfs:subClassOf :Food .
+
+#################################################################
+# Object Properties
+#################################################################
+
+:hasIngredient a owl:ObjectProperty ;
+  rdfs:label "has ingredient"@en ;
+  rdfs:comment "Relates a food to one of its ingredients."@en ;
+  rdfs:domain :Food ;
+  rdfs:range :Ingredient .
+
+:suitableForDiet a owl:ObjectProperty ;
+  rdfs:label "suitable for diet"@en ;
+  rdfs:comment "Indicates that a food is appropriate for a given diet."@en ;
+  rdfs:domain :Food ;
+  rdfs:range :Diet .
+
+#################################################################
+# Datatype Properties
+#################################################################
+
+:caloriesPer100g a owl:DatatypeProperty ;
+  rdfs:label "calories per 100g"@en ;
+  rdfs:comment "Energy value per 100 grams of food."@en ;
+  rdfs:domain :Food ;
+  rdfs:range xsd:integer .
+
+#################################################################
+# Individuals
+#################################################################
+
+:Tomato a :Ingredient ;
+  rdfs:label "Tomato"@en .
+
+:Pasta a :Ingredient ;
+  rdfs:label "Pasta"@en .
+
+:OliveOil a :Ingredient ;
+  rdfs:label "Olive oil"@en .
+
+:VeganDiet a :Diet ;
+  rdfs:label "Vegan diet"@en .
+
+:PastaSalad a :Food ;
+  rdfs:label "Pasta salad"@en ;
+  rdfs:comment "A simple pasta salad made with tomato and olive oil."@en ;
+  :hasIngredient :Pasta , :Tomato , :OliveOil ;
+  :suitableForDiet :VeganDiet ;
+  :caloriesPer100g 150 .
