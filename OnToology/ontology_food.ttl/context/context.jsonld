@@ -1,0 +1,76 @@
+{
+  "@context" : {
+    "abstract" : {
+      "@id" : "http://purl.org/dc/terms/abstract"
+    },
+    "versionInfo" : {
+      "@id" : "http://www.w3.org/2002/07/owl#versionInfo"
+    },
+    "license" : {
+      "@id" : "http://purl.org/dc/terms/license"
+    },
+    "issued" : {
+      "@id" : "http://purl.org/dc/terms/issued"
+    },
+    "Food" : {
+      "@id" : "http://example.org/food#Food"
+    },
+    "codeRepository" : {
+      "@id" : "http://schema.org/codeRepository"
+    },
+    "label" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#label"
+    },
+    "Ingredient" : {
+      "@id" : "http://example.org/food#Ingredient"
+    },
+    "caloriesPer100g" : {
+      "@id" : "http://example.org/food#caloriesPer100g",
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer"
+    },
+    "homepage" : {
+      "@id" : "http://xmlns.com/foaf/0.1/homepage"
+    },
+    "Person" : {
+      "@id" : "http://xmlns.com/foaf/0.1/Person"
+    },
+    "creator" : {
+      "@id" : "http://purl.org/dc/terms/creator"
+    },
+    "name" : {
+      "@id" : "http://xmlns.com/foaf/0.1/name"
+    },
+    "preferredNamespacePrefix" : {
+      "@id" : "http://purl.org/vocab/vann/preferredNamespacePrefix"
+    },
+    "VeganFood" : {
+      "@id" : "http://example.org/food#VeganFood"
+    },
+    "hasIngredient" : {
+      "@id" : "http://example.org/food#hasIngredient",
+      "@type" : "@id"
+    },
+    "title" : {
+      "@id" : "http://purl.org/dc/terms/title"
+    },
+    "Diet" : {
+      "@id" : "http://example.org/food#Diet"
+    },
+    "modified" : {
+      "@id" : "http://purl.org/dc/terms/modified"
+    },
+    "suitableForDiet" : {
+      "@id" : "http://example.org/food#suitableForDiet",
+      "@type" : "@id"
+    },
+    "comment" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#comment"
+    },
+    "description" : {
+      "@id" : "http://purl.org/dc/terms/description"
+    },
+    "preferredNamespaceUri" : {
+      "@id" : "http://purl.org/vocab/vann/preferredNamespaceUri"
+    }
+  }
+}

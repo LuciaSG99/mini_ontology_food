@@ -1,0 +1,189 @@
+<http://example.org/food> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<http://example.org/food> <http://www.w3.org/2002/07/owl#versionIRI> <http://example.org/food/1.0.0> .
+<http://example.org/food> <http://purl.org/dc/terms/abstract> "A tiny ontology about foods, ingredients, and diets, created for teaching and demonstration purposes."@en .
+<http://example.org/food> <http://purl.org/dc/terms/creator> <http://example.org/people/LuciaSanchez> .
+<http://example.org/food> <http://purl.org/dc/terms/description> "This ontology provides a minimal conceptualization of foods, ingredients, and diets."@en .
+<http://example.org/food> <http://purl.org/dc/terms/issued> "2025-12-16"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://example.org/food> <http://purl.org/dc/terms/license> <https://www.apache.org/licenses/LICENSE-2.0> .
+<http://example.org/food> <http://purl.org/dc/terms/modified> "2025-12-16"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://example.org/food> <http://purl.org/dc/terms/title> "Mini Food Ontology"@en .
+<http://example.org/food> <http://purl.org/vocab/vann/preferredNamespacePrefix> "food" .
+<http://example.org/food> <http://purl.org/vocab/vann/preferredNamespaceUri> "http://example.org/food#"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
+<http://example.org/food> <http://schema.org/codeRepository> <https://github.com/example/mini-food-ontology> .
+<http://example.org/food> <http://www.w3.org/2002/07/owl#versionInfo> "1.0.0" .
+<http://example.org/food> <http://xmlns.com/foaf/0.1/homepage> <http://example.org/food/docs> .
+# 
+# 
+# #################################################################
+# #
+# #    Annotation properties
+# #
+# #################################################################
+# 
+# 
+# http://purl.org/dc/terms/abstract
+<http://purl.org/dc/terms/abstract> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/creator
+<http://purl.org/dc/terms/creator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/description
+<http://purl.org/dc/terms/description> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/issued
+<http://purl.org/dc/terms/issued> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/license
+<http://purl.org/dc/terms/license> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/modified
+<http://purl.org/dc/terms/modified> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/title
+<http://purl.org/dc/terms/title> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/vocab/vann/preferredNamespacePrefix
+<http://purl.org/vocab/vann/preferredNamespacePrefix> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/vocab/vann/preferredNamespaceUri
+<http://purl.org/vocab/vann/preferredNamespaceUri> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://schema.org/codeRepository
+<http://schema.org/codeRepository> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://xmlns.com/foaf/0.1/homepage
+<http://xmlns.com/foaf/0.1/homepage> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://xmlns.com/foaf/0.1/name
+<http://xmlns.com/foaf/0.1/name> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Datatypes
+# #
+# #################################################################
+# 
+# 
+# http://www.w3.org/2001/XMLSchema#date
+<http://www.w3.org/2001/XMLSchema#date> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Object Properties
+# #
+# #################################################################
+# 
+# 
+# http://example.org/food#hasIngredient
+<http://example.org/food#hasIngredient> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://example.org/food#hasIngredient> <http://www.w3.org/2000/01/rdf-schema#domain> <http://example.org/food#Food> .
+<http://example.org/food#hasIngredient> <http://www.w3.org/2000/01/rdf-schema#range> <http://example.org/food#Ingredient> .
+<http://example.org/food#hasIngredient> <http://www.w3.org/2000/01/rdf-schema#comment> "Relates a food to one of its ingredients."@en .
+<http://example.org/food#hasIngredient> <http://www.w3.org/2000/01/rdf-schema#label> "has ingredient"@en .
+# 
+# http://example.org/food#suitableForDiet
+<http://example.org/food#suitableForDiet> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://example.org/food#suitableForDiet> <http://www.w3.org/2000/01/rdf-schema#domain> <http://example.org/food#Food> .
+<http://example.org/food#suitableForDiet> <http://www.w3.org/2000/01/rdf-schema#range> <http://example.org/food#Diet> .
+<http://example.org/food#suitableForDiet> <http://www.w3.org/2000/01/rdf-schema#comment> "Indicates that a food is appropriate for a given diet."@en .
+<http://example.org/food#suitableForDiet> <http://www.w3.org/2000/01/rdf-schema#label> "suitable for diet"@en .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Data properties
+# #
+# #################################################################
+# 
+# 
+# http://example.org/food#caloriesPer100g
+<http://example.org/food#caloriesPer100g> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://example.org/food#caloriesPer100g> <http://www.w3.org/2000/01/rdf-schema#domain> <http://example.org/food#Food> .
+<http://example.org/food#caloriesPer100g> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#integer> .
+<http://example.org/food#caloriesPer100g> <http://www.w3.org/2000/01/rdf-schema#comment> "Energy value per 100 grams of food."@en .
+<http://example.org/food#caloriesPer100g> <http://www.w3.org/2000/01/rdf-schema#label> "calories per 100g"@en .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# http://example.org/food#Diet
+<http://example.org/food#Diet> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://example.org/food#Diet> <http://www.w3.org/2000/01/rdf-schema#comment> "A set of dietary rules or eating patterns."@en .
+<http://example.org/food#Diet> <http://www.w3.org/2000/01/rdf-schema#label> "Diet"@en .
+# 
+# http://example.org/food#Food
+<http://example.org/food#Food> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://example.org/food#Food> <http://www.w3.org/2000/01/rdf-schema#comment> "Any edible item intended for human consumption."@en .
+<http://example.org/food#Food> <http://www.w3.org/2000/01/rdf-schema#label> "Food"@en .
+# 
+# http://example.org/food#Ingredient
+<http://example.org/food#Ingredient> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://example.org/food#Ingredient> <http://www.w3.org/2000/01/rdf-schema#comment> "A component used to prepare a food."@en .
+<http://example.org/food#Ingredient> <http://www.w3.org/2000/01/rdf-schema#label> "Ingredient"@en .
+# 
+# http://example.org/food#VeganFood
+<http://example.org/food#VeganFood> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://example.org/food#VeganFood> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://example.org/food#Food> .
+<http://example.org/food#VeganFood> <http://www.w3.org/2000/01/rdf-schema#comment> "Food that is suitable for a vegan diet."@en .
+<http://example.org/food#VeganFood> <http://www.w3.org/2000/01/rdf-schema#label> "Vegan food"@en .
+# 
+# http://xmlns.com/foaf/0.1/Person
+<http://xmlns.com/foaf/0.1/Person> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Individuals
+# #
+# #################################################################
+# 
+# 
+# http://example.org/food#OliveOil
+<http://example.org/food#OliveOil> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://example.org/food#OliveOil> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/food#Ingredient> .
+<http://example.org/food#OliveOil> <http://www.w3.org/2000/01/rdf-schema#label> "Olive oil"@en .
+# 
+# http://example.org/food#Pasta
+<http://example.org/food#Pasta> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://example.org/food#Pasta> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/food#Ingredient> .
+<http://example.org/food#Pasta> <http://www.w3.org/2000/01/rdf-schema#label> "Pasta"@en .
+# 
+# http://example.org/food#PastaSalad
+<http://example.org/food#PastaSalad> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://example.org/food#PastaSalad> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/food#Food> .
+<http://example.org/food#PastaSalad> <http://example.org/food#hasIngredient> <http://example.org/food#OliveOil> .
+<http://example.org/food#PastaSalad> <http://example.org/food#hasIngredient> <http://example.org/food#Pasta> .
+<http://example.org/food#PastaSalad> <http://example.org/food#hasIngredient> <http://example.org/food#Tomato> .
+<http://example.org/food#Tomato> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://example.org/food#PastaSalad> <http://example.org/food#suitableForDiet> <http://example.org/food#VeganDiet> .
+<http://example.org/food#VeganDiet> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://example.org/food#PastaSalad> <http://example.org/food#caloriesPer100g> "150"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://example.org/food#PastaSalad> <http://www.w3.org/2000/01/rdf-schema#comment> "A simple pasta salad made with tomato and olive oil."@en .
+<http://example.org/food#PastaSalad> <http://www.w3.org/2000/01/rdf-schema#label> "Pasta salad"@en .
+# 
+# http://example.org/food#Tomato
+<http://example.org/food#Tomato> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/food#Ingredient> .
+<http://example.org/food#Tomato> <http://www.w3.org/2000/01/rdf-schema#label> "Tomato"@en .
+# 
+# http://example.org/food#VeganDiet
+<http://example.org/food#VeganDiet> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/food#Diet> .
+<http://example.org/food#VeganDiet> <http://www.w3.org/2000/01/rdf-schema#label> "Vegan diet"@en .
+# 
+# http://example.org/people/LuciaSanchez
+<http://example.org/people/LuciaSanchez> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://example.org/people/LuciaSanchez> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Person> .
+<http://example.org/people/LuciaSanchez> <http://xmlns.com/foaf/0.1/name> "Lucía Sánchez" .
+# 
+# Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/

@@ -1,0 +1,377 @@
+<h2 id="crossreference" class="list">Cross-reference for Mini Food Ontology classes, object properties and data properties <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+This section provides details for each class and property defined by Mini Food Ontology.
+<div xmlns:widoco="https://w3id.org/widoco/vocab#"
+     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+     id="classes">
+   <h3 id="classes-headline" class="list">Classes</h3>
+   <ul class="hlist">
+      <li>
+         <a href="#Diet" title="http://example.org/food#Diet">Diet</a>
+      </li>
+      <li>
+         <a href="#Food" title="http://example.org/food#Food">Food</a>
+      </li>
+      <li>
+         <a href="#Ingredient" title="http://example.org/food#Ingredient">Ingredient</a>
+      </li>
+      <li>
+         <a href="#VeganFood" title="http://example.org/food#VeganFood">Vegan food</a>
+      </li>
+   </ul>
+   <div class="entity" id="Diet">
+      <h3>Diet<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://example.org/food#Diet</p>
+      <div class="comment">
+         <span class="markdown">A set of dietary rules or eating patterns.</span>
+      </div>
+      <dl class="description">
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#suitableForDiet" title="http://example.org/food#suitableForDiet">suitable for diet</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+         <dt>has members</dt>
+         <dd>
+            <a href="#VeganDiet" title="http://example.org/food#VeganDiet">Vegan diet</a>
+            <sup class="type-ni" title="named individual">ni</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="Food">
+      <h3>Food<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://example.org/food#Food</p>
+      <div class="comment">
+         <span class="markdown">Any edible item intended for human consumption.</span>
+      </div>
+      <dl class="description">
+         <dt>has sub-classes</dt>
+         <dd>
+            <a href="#VeganFood" title="http://example.org/food#VeganFood">Vegan food</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>is in domain of</dt>
+         <dd>
+            <a href="#caloriesPer100g" title="http://example.org/food#caloriesPer100g">calories per 100g</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#hasIngredient" title="http://example.org/food#hasIngredient">has ingredient</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#suitableForDiet" title="http://example.org/food#suitableForDiet">suitable for diet</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+         <dt>has members</dt>
+         <dd>
+            <a href="#PastaSalad" title="http://example.org/food#PastaSalad">Pasta salad</a>
+            <sup class="type-ni" title="named individual">ni</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="Ingredient">
+      <h3>Ingredient<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://example.org/food#Ingredient</p>
+      <div class="comment">
+         <span class="markdown">A component used to prepare a food.</span>
+      </div>
+      <dl class="description">
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#hasIngredient" title="http://example.org/food#hasIngredient">has ingredient</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+         <dt>has members</dt>
+         <dd>
+            <a href="#OliveOil" title="http://example.org/food#OliveOil">Olive oil</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#Pasta" title="http://example.org/food#Pasta">Pasta</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#Tomato" title="http://example.org/food#Tomato">Tomato</a>
+            <sup class="type-ni" title="named individual">ni</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="VeganFood">
+      <h3>Vegan food<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://example.org/food#VeganFood</p>
+      <div class="comment">
+         <span class="markdown">Food that is suitable for a vegan diet.</span>
+      </div>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#Food" title="http://example.org/food#Food">Food</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+</div><div xmlns:widoco="https://w3id.org/widoco/vocab#"
+     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+     id="objectproperties">
+   <h3 id="properties" class="list">Object Properties</h3>
+   <ul class="hlist">
+      <li>
+         <a href="#hasIngredient" title="http://example.org/food#hasIngredient">has ingredient</a>
+      </li>
+      <li>
+         <a href="#suitableForDiet" title="http://example.org/food#suitableForDiet">suitable for diet</a>
+      </li>
+   </ul>
+   <div class="entity" id="hasIngredient">
+      <h3>has ingredient<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://example.org/food#hasIngredient</p>
+      <div class="comment">
+         <span class="markdown">Relates a food to one of its ingredients.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Food" title="http://example.org/food#Food">Food</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#Ingredient" title="http://example.org/food#Ingredient">Ingredient</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="suitableForDiet">
+      <h3>suitable for diet<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://example.org/food#suitableForDiet</p>
+      <div class="comment">
+         <span class="markdown">Indicates that a food is appropriate for a given diet.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Food" title="http://example.org/food#Food">Food</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#Diet" title="http://example.org/food#Diet">Diet</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+</div><div xmlns:widoco="https://w3id.org/widoco/vocab#"
+     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+     id="dataproperties">
+   <h3 id="dataproperties-headline" class="list">Data Properties</h3>
+   <ul class="hlist">
+      <li>
+         <a href="#caloriesPer100g" title="http://example.org/food#caloriesPer100g">calories per 100g</a>
+      </li>
+   </ul>
+   <div class="entity" id="caloriesPer100g">
+      <h3>calories per 100g<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://example.org/food#caloriesPer100g</p>
+      <div class="comment">
+         <span class="markdown">Energy value per 100 grams of food.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Food" title="http://example.org/food#Food">Food</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/2001/XMLSchema#integer"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#integer">integer</a>
+            </dd>
+         </dl>
+      </div>
+   </div>
+</div><div xmlns:widoco="https://w3id.org/widoco/vocab#"
+     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+     id="namedindividuals">
+   <h3 id="namedindividuals" class="list">Named Individuals</h3>
+   <ul class="hlist">
+      <li>
+         <a href="#http://example.org/people/LuciaSanchez" title="http://example.org/people/LuciaSanchez">
+            <span>lucia sanchez</span>
+         </a>
+      </li>
+      <li>
+         <a href="#OliveOil" title="http://example.org/food#OliveOil">Olive oil</a>
+      </li>
+      <li>
+         <a href="#Pasta" title="http://example.org/food#Pasta">Pasta</a>
+      </li>
+      <li>
+         <a href="#PastaSalad" title="http://example.org/food#PastaSalad">Pasta salad</a>
+      </li>
+      <li>
+         <a href="#Tomato" title="http://example.org/food#Tomato">Tomato</a>
+      </li>
+      <li>
+         <a href="#VeganDiet" title="http://example.org/food#VeganDiet">Vegan diet</a>
+      </li>
+   </ul>
+   <div class="entity" id="http://example.org/people/LuciaSanchez">
+      <h3>lucia sanchez<sup class="type-ni" title="named individual">ni</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://example.org/people/LuciaSanchez</p>
+      <dl class="description">
+         <dt>belongs to</dt>
+         <dd>
+            <a href="http://xmlns.com/foaf/0.1/Person"
+               target="_blank"
+               title="http://xmlns.com/foaf/0.1/Person">person</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="OliveOil">
+      <h3>Olive oil<sup class="type-ni" title="named individual">ni</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://example.org/food#OliveOil</p>
+      <dl class="description">
+         <dt>belongs to</dt>
+         <dd>
+            <a href="#Ingredient" title="http://example.org/food#Ingredient">Ingredient</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="Pasta">
+      <h3>Pasta<sup class="type-ni" title="named individual">ni</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://example.org/food#Pasta</p>
+      <dl class="description">
+         <dt>belongs to</dt>
+         <dd>
+            <a href="#Ingredient" title="http://example.org/food#Ingredient">Ingredient</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="PastaSalad">
+      <h3>Pasta salad<sup class="type-ni" title="named individual">ni</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://example.org/food#PastaSalad</p>
+      <div class="comment">
+         <span class="markdown">A simple pasta salad made with tomato and olive oil.</span>
+      </div>
+      <dl class="description">
+         <dt>belongs to</dt>
+         <dd>
+            <a href="#Food" title="http://example.org/food#Food">Food</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>has facts</dt>
+         <dd>
+            <a href="#hasIngredient" title="http://example.org/food#hasIngredient">has ingredient</a>
+            <sup class="type-op" title="object property">op</sup> 
+            <a href="#OliveOil" title="http://example.org/food#OliveOil">Olive oil</a>
+         </dd>
+         <dd>
+            <a href="#hasIngredient" title="http://example.org/food#hasIngredient">has ingredient</a>
+            <sup class="type-op" title="object property">op</sup> 
+            <a href="#Pasta" title="http://example.org/food#Pasta">Pasta</a>
+         </dd>
+         <dd>
+            <a href="#hasIngredient" title="http://example.org/food#hasIngredient">has ingredient</a>
+            <sup class="type-op" title="object property">op</sup> 
+            <a href="#Tomato" title="http://example.org/food#Tomato">Tomato</a>
+         </dd>
+         <dd>
+            <a href="#suitableForDiet" title="http://example.org/food#suitableForDiet">suitable for diet</a>
+            <sup class="type-op" title="object property">op</sup> 
+            <a href="#VeganDiet" title="http://example.org/food#VeganDiet">Vegan diet</a>
+         </dd>
+         <dd>
+            <a href="#caloriesPer100g" title="http://example.org/food#caloriesPer100g">calories per 100g</a>
+            <sup class="type-dp" title="data property">dp</sup> 
+            <span class="literal">"150"^^<a href="http://www.w3.org/2001/XMLSchema#integer"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#integer">integer</a>
+            </span>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="Tomato">
+      <h3>Tomato<sup class="type-ni" title="named individual">ni</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://example.org/food#Tomato</p>
+      <dl class="description">
+         <dt>belongs to</dt>
+         <dd>
+            <a href="#Ingredient" title="http://example.org/food#Ingredient">Ingredient</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="VeganDiet">
+      <h3>Vegan diet<sup class="type-ni" title="named individual">ni</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://example.org/food#VeganDiet</p>
+      <dl class="description">
+         <dt>belongs to</dt>
+         <dd>
+            <a href="#Diet" title="http://example.org/food#Diet">Diet</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+</div><div xmlns:widoco="https://w3id.org/widoco/vocab#"
+     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+     id="rules">
+   <h3 class="list" id="rule">Rules</h3>
+   <ul class="hlist"/>
+</div><div id="legend">
+<h2>Legend <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+<div   class="entity">
+<sup class="type-c" title="Classes">c</sup>: Classes <br/>
+<sup class="type-op" title="Object Properties">op</sup>: Object Properties <br/>
+<sup class="type-dp" title="Data Properties">dp</sup>: Data Properties <br/>
+<sup class="type-ni" title="Named Individuals">ni</sup>: Named Individuals
+</div>
+</div>
